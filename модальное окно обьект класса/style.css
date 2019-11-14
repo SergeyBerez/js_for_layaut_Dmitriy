@@ -1,0 +1,38 @@
+.modal {
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  box-shadow: 0 0 5px black;
+  z-index: 1001;
+  position: fixed;
+  background: white;
+  display: none;
+  top: 30%;
+  left: 40%;
+}
+
+.overlay {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(128, 128, 128, 0.603);
+}
+
+.show {
+  display: block;
+}
+
+.form_popup {
+  display: none;
+  text-align: center;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}

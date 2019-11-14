@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  margin: 0 auto;
+  width: 1024px;
+  height: 1000px;
+  text-align: center;
+  background: grey;
+}
+.galery {
+  margin: 0 auto;
+
+  width: 600px;
+  height: 410px;
+  position: relative;
+}
+.galery img {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 0.9s;
+}
+.galery .activ {
+  opacity: 1;
+}

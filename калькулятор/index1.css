@@ -1,0 +1,37 @@
+.calc {
+  /* display: flex;
+  justify-content: space-around; */
+  /* 
+  background: grey;
+  border: 1px solid #000;
+  border-radius: 50 px; */
+
+  font-size: 20px;
+  color: rgb(16, 16, 17);
+}
+/* button {
+  width: 50px;
+  height: 50px;
+} */
+:disabled {
+  color: rgb(233, 219, 219);
+}
+input {
+  height: 60px;
+  color: rgb(14, 20, 20);
+  font-size: 30px;
+
+  text-align: center;
+  background: linear-gradient(to top, rgb(124, 223, 124) 30%, yellow) 80%;
+}
+.res {
+  min-width: 50px;
+  min-height: 50px;
+  background: aliceblue;
+  font-size: 30px;
+
+  text-align: center;
+  line-height: 50px;
+  padding: 20px;
+  /* margin-top: 100px; */
+}

@@ -1,0 +1,17 @@
+.err {
+  outline: 3px solid rgb(255, 0, 0);
+}
+.block {
+  /* display: none; */
+}
+label {
+  position: relative;
+  display: block;
+  height: 50px;
+  background: grey;
+}
+span {
+  color: rgb(241, 3, 3);
+  position: absolute;
+  display: none;
+}

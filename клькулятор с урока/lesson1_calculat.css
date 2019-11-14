@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: rgba(236, 35, 35, 0.479);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.calc {
+  /* flex-basis: 80%; */
+}
+.calc input {
+}
+
+.box {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background: grey;
+}
+
+.border {
+  width: 50px;
+  border: 3px solid rgb(245, 5, 5);
+}
+
+.borderGreen {
+  border: 5px solid rgb(73, 245, 5);
+}
