@@ -60,7 +60,7 @@ let btn1 = document.querySelector('.btn1 ');
 let a = 0;
 setInterval(function() {
   let i = a % 2;
-  
+
   a++;
   btn1.textContent = i;
 }, 1000);
@@ -71,7 +71,7 @@ setInterval(function() {
 //   j++;
 // }, 1000);
 
-//  =====случайный набор чисел от 1 до 10 включая 1 и 10 
+//  =====случайный набор чисел от 1 до 10 включая 1 и 10
 
 let btn3 = document.querySelector('.btn3 ');
 
@@ -80,19 +80,29 @@ setInterval(function() {
   btn3.textContent = x;
 }, 1000);
 
-//  =====случайный набор чисел от 1 до 9 включая 1 и 9 
+//  =====случайный набор чисел от 1 до 9 включая 1 и 9
 // setInterval(function() {
 //   let x = Math.floor(Math.random() * (10 - 1)) + 1;
 //   btn3.textContent = x;
 // }, 1000);
-//  =====случайный набор чисел от 0 до 9 включая 0 и 9 
+//  =====случайный набор чисел от 0 до 9 включая 0 и 9
 // setInterval(function() {
 //   let x = Math.floor(Math.random() * (11 - 1));
 //   console.log(x);
 // }, 500);
+// получаем тег в него будет выводиться результат 
+let res = document.querySelector('.res');
+//получаем наши элементы дом
+let links = document.querySelectorAll('a');
+console.log(links);
+// наша функция которая получает в качестве аргумента число , в нашем случае это количесво елементов NodeList 
 
-// setInterval(function() {
-//   let random = Math.floor(Math.random() * (boxs.length + 1 - 1));
-
-//   console.log(random);
-// }, 200);
+function myRandom(nodelist) {
+  return setInterval(function() {
+    let random = Math.floor(Math.random() * (nodelist + 1 - 1));
+    // записываем результат в наш документ в тег span
+    res.textContent = links[random].innerHTML;
+  }, 1000);
+}
+//вызываем функцию и передаем ей наш NodeList 
+ myRandom(links.length);
